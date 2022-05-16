@@ -13,7 +13,6 @@ export const Container = styled.div`
         color: #126BA5;
         margin-bottom: 30px;
         color: #FED766;
-        /* font-family: 'Press Start 2P', cursive; */
     }
 
     form{
@@ -34,7 +33,6 @@ export const Container = styled.div`
         font-size: 20px;
         line-height: 25px;
         color:  #000000;
-        /* font-family: 'Raleway', sans-serif; */
     }
 
     input:focus:invalid {
@@ -53,7 +51,6 @@ export const Container = styled.div`
         border-radius: 5px;
         font-size: 21px;
         color: #FFFFFF;
-        /* font-family: 'Raleway', sans-serif;  */
     }
    
     .button-disable {

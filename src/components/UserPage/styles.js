@@ -41,7 +41,6 @@ export const Container = styled.div`
         font-size: 20px;
         line-height: 25px;
         color:  #000000;
-        
     }
 
     input:focus:invalid {
@@ -60,7 +59,6 @@ export const Container = styled.div`
         border-radius: 5px;
         font-size: 21px;
         color: #FFFFFF;
-        /* font-family: 'Raleway', sans-serif;  */
     }
    
     .button-disable {

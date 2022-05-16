@@ -45,7 +45,6 @@ export const Icons = styled.div`
     }
 
     .dropdown {
-        /* position: relative; */
         display: inline-block;
         height: 50px;
         display: flex;

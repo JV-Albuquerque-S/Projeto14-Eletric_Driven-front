@@ -24,7 +24,7 @@ export default function Login(){
         
         promise.then(response => {
             setUser(response.data);
-            navigate("/user-page"); 
+            navigate("/"); 
         });
         
         promise.catch(() => {
