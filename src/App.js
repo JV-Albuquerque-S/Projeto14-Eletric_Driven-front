@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage";
 import Login from "./components/Login";
 import SignUp from "./components/Singup";
 import UserPage from "./components/UserPage";
+import CartPage from "./components/CartPage";
 import { Reset } from "./Global-styles/reset";
 import { BodyStyle } from "./Global-styles/body";
 
@@ -22,6 +23,7 @@ export default function App(){
                         <Route path="/login" element={<Login />} />
                         <Route path="/sign-up" element={<SignUp />} />
                         <Route path="/user-page" element={<UserPage />} />
+                        <Route path="/cart-page" element={<CartPage />} />
                     </Routes>
             </BrowserRouter>
         </UserContext.Provider>
