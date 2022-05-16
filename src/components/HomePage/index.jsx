@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 
 import TopBar from "../TopBar";
 
+import { Container } from "./styles";
+
 export default function HomePage(){
     const [produtos, setProdutos] = useState([]);
 
@@ -16,15 +18,17 @@ export default function HomePage(){
     return(
         <>
             <TopBar />
-            {produtos.map(produto => {
-                return(
-                    <div>
-                        <img src={produto.img} alt="imagem do produto" />
-                        <p>{produto.name}</p>
-                        <p>R${produto.price}</p>
-                    </div>
-                )
-            })}
+            <Container>
+                {produtos.map(produto => {
+                    return(
+                        <div>
+                            <img src={produto.img} alt="imagem do produto" />
+                            <p>{produto.name}</p>
+                            <p>R${produto.price},00</p>
+                        </div>
+                    )
+                })}
+            </Container>
         </>
     )
 }
