@@ -9,7 +9,7 @@ export default function CartPage(){
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        const request = axios.get("http://localhost:5000/products")
+        const request = axios.get("http://localhost:5000/user-cart")
         request.then(response => {
             console.log(response.data);
             setCart(response.data);
