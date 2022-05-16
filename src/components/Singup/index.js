@@ -4,6 +4,8 @@ import axios from "axios";
 
 import { Container } from "./styles";
 
+import TopBar from "../TopBar";
+
 
 export default function SignUp(){
     const [email, setEmail] = useState("");
@@ -36,9 +38,8 @@ export default function SignUp(){
     }
     return(
         <Container>
-        
         <p>Eletric Driven</p>
-            <form onSubmit={registerUser}>
+            <form onSubmit={registerUser}> 
                 <input 
                     type="text" 
                     placeholder="Nome" 
@@ -77,7 +78,7 @@ export default function SignUp(){
                 />
 		        <button type="submit">Cadastrar</button>
             </form>
-            <Link className="link" to="/">Já tem uma conta? Faça login!</Link>
+            <Link className="link" to="/login">Já tem uma conta? Faça login!</Link>
             <Link className="link" to="/">Voltar para página principal</Link>
         </Container>
     )
