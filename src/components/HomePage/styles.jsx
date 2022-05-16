@@ -25,4 +25,12 @@ export const Container = styled.div`
         font-size: 20px;
         text-align: center;
     }
+
+    button {
+        border: none;
+        border-radius: 10px;
+        border-width: 0px;
+        font-family: 'Medula One', cursive;
+        font-size: 20px;
+    }
 `

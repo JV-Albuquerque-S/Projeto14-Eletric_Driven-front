@@ -20,7 +20,7 @@ export default function CartPage(){
         <>
             <TopBar />
             <Container>
-                <p>Carrinho</p>
+                <h1>Carrinho</h1>
                 <div>
                     {cart.map(item => {
                         return (

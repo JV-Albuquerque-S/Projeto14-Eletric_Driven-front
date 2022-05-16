@@ -7,6 +7,7 @@ import { Container } from "./styles";
 
 export default function HomePage(){
     const [produtos, setProdutos] = useState([]);
+    const [carrinho, setCarrinho] = useState([]);
 
     useEffect(() => {
         const request = axios.get("http://localhost:5000/products")
@@ -25,6 +26,10 @@ export default function HomePage(){
                             <img src={produto.img} alt="imagem do produto" />
                             <p>{produto.name}</p>
                             <p>R${produto.price},00</p>
+                            <button onClick={() => {
+                                setCarrinho([...carrinho, produto._id]);
+                                console.log(carrinho);
+                            }}>Adicionar ao carrinho</button>
                         </div>
                     )
                 })}

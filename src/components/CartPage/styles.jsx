@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     padding: 15px;
 
-    p {
+    h1 {
         font-size:50px;
         color: #126BA5;
         margin-bottom: 30px;
@@ -17,5 +17,17 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+        border-radius: 20px;
     }
 `
