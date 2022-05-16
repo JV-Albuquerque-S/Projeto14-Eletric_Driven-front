@@ -35,7 +35,7 @@ export default function TopBar(){
                 <div className="dropdown">
                     <ion-icon className="button" name="person-circle-outline"></ion-icon>
                     <div className="dropdown-content">
-                        <Link className="link" to="/user">Página do usuário</Link>
+                        <Link className="link" to="/user-page">Página do usuário</Link>
                         <Link className="link" onClick={logout} to="/">Logout</Link>
                     </div>
                 </div>
