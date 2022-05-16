@@ -31,7 +31,7 @@ export default function TopBar(){
             (<Icons>
                 <p className="greeting">Olá,  <b>{`${user.name}`}</b></p>
                 <div className="right-coner">
-                <ion-icon name="cart-outline"></ion-icon>
+                <Link className="link" to="/cart-page"><ion-icon name="cart-outline"></ion-icon></Link>
                 <div className="dropdown">
                     <ion-icon className="button" name="person-circle-outline"></ion-icon>
                     <div className="dropdown-content">
